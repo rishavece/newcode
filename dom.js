@@ -14,21 +14,21 @@
 // domManipulation.js
 
 // Example using parentElement
-var mainHeader = document.getElementById('main-header');
-var container = mainHeader.parentElement;
-console.log('Parent Element:', container);
+//var mainHeader = document.getElementById('main-header');
+//var container = mainHeader.parentElement;
+//console.log('Parent Element:', container);
 
 // Example using lastElementChild
-var itemsList = document.getElementById('items');
-var lastItem = itemsList.lastElementChild;
-console.log('Last Element Child:', lastItem);
+//var itemsList = document.getElementById('items');
+//var lastItem = itemsList.lastElementChild;
+//console.log('Last Element Child:', lastItem);
 
 // Example using lastChild
-var lastItemText = itemsList.lastChild;
-console.log('Last Child:', lastItemText);
+//var lastItemText = itemsList.lastChild;
+//console.log('Last Child:', lastItemText);
 
 // Example using createElement and appendChild
-var newElement = document.createElement('li');
+/*var newElement = document.createElement('li');
 newElement.textContent = 'New Item';
 itemsList.appendChild(newElement);
 
@@ -61,4 +61,8 @@ var newDiv = document.createElement('div');
 newDiv.setAttribute('class', 'new-div');
 var newText = document.createTextNode('This is a new div.');
 newDiv.appendChild(newText);
-document.body.appendChild(newDiv);
+document.body.appendChild(newDiv);*/
+
+var itemsList=document.querySelector('#items');
+console.log(itemsList.children[1]);
+itemsList.children[1].style.backgroundColor='yellow';
