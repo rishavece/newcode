@@ -1,4 +1,4 @@
-var form = document.getElementById('addForm');
+/*var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
 var filter = document.getElementById('filter');
 
@@ -64,4 +64,6 @@ function filterItems(e){
       item.style.display = 'none';
     }
   });
-}
+}*/
+localStorage.setItem('name','bob')
+console.log(localStorage.getItem('name'))
