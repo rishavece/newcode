@@ -65,5 +65,13 @@ function filterItems(e){
     }
   });
 }*/
-localStorage.setItem('name','bob')
-console.log(localStorage.getItem('name'))
+//localStorage.setItem('name','bob')
+//console.log(localStorage.getItem('name'))
+ let myobj={
+    name:"rishav",
+    age:24
+ };
+ let myobjs=JSON.stringify(myobj);
+ localStorage.setItem("myobj",myobjs);
+  let myobjds=JSON.parse(localStorage.getItem("myobj"));
+  console.log(myobjds);
